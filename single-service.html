@@ -34,10 +34,21 @@
   gtag('config', 'G-5F3WFLMVTE');
 </script>
 <style>
-    video {
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  max-height: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
 }
     </style>
     <script src="js/jquery.min.js"></script>
@@ -182,7 +193,7 @@
                 </div>
     </div>
      <hr>
- <div class="containerr" style:"display: flex; justify-content: center; align-items: center">
+ <div class="thumb-wrap">
   <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/nwCLewTZG9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> 
