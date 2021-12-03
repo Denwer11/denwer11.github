@@ -45,6 +45,10 @@
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/custom.js"></script>
     <script src="//ulogin.ru/js/ulogin.js"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+<script type="text/javascript">
+  VK.init({apiId: 8015773});
+</script>
 <script src="//code-ya.jivosite.com/widget/8fhN7U9dNU" async></script>
     <meta name="Description" content="Контакты строительной компании Construction. Номера мобильных телефонов, адрес и почта. По всем вопросам обращаться по указанным контактам. Осуществляем консультацию."/>
 </head>
@@ -173,7 +177,11 @@
                             <script src="https://yastatic.net/share2/share.js"></script>
 <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="facebook,twitter"></div>
                             <div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=https%3A%2F%2Fdenwer11.github.io%2F;mobilebuttons=0;"></div>
-                            
+                            <!-- VK Widget -->
+<div id="vk_auth"></div>
+<script type="text/javascript">
+  VK.Widgets.Auth("vk_auth", {"width":100,"authUrl":"/dev/Login"});
+</script>
                         </div>
                      
                         
