@@ -47,6 +47,11 @@
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/booking.js"></script>
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+<script type="text/javascript">
+  VK.init({apiId: 8015773});
+</script>
+<script src="//code-ya.jivosite.com/widget/8fhN7U9dNU" async></script>
     <script>
         jQuery(document).ready(function () {
             jQuery('#datepicker').datepicker();
@@ -178,6 +183,50 @@
                                 <img src="img/social-icons/youtube.png" alt="" /></a>
 <script src="https://yastatic.net/share2/share.js"></script>
 <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="facebook,twitter"></div>
+				                            <h4>Авторизироваться:</h4>
+                            <!-- VK Widget -->
+<div id="vk_auth"></div>
+<script type="text/javascript">
+  VK.Widgets.Auth("vk_auth", {"width":100,"authUrl":"/dev/Login"});
+</script>
+                            <div></div>                   
+                            
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{your-app-id}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+    FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+    {
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+    }
+}
+</script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v12.0&appId=277457901001782&autoLogAppEvents=1" nonce="9QQrvCZi"></script>
+                            <div class="fb-login-button" data-width="150" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="false"></div>
                         </div>
                     </div>
 
